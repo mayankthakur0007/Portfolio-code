@@ -6,7 +6,7 @@
         opacity:1;
     }
   }
-  
+
   .loadAnimate{
     display: flex;
     animation: fade-in 1s 1;
@@ -14,4 +14,8 @@
     text-align: center;
     margin: 0 auto;
     width: 100%;
+  }
+
+  .fadeIn{
+    animation: fade-in 1s 1;
   }

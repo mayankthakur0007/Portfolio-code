@@ -1,5 +1,4 @@
 import "./Animation.css";
-import "./Intro.css";
 
 const Intro = () => {
   return (

@@ -5,3 +5,21 @@
   justify-content: space-evenly;
   height:100vh;
 }
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+  transform: skewY(0deg) scale(1,1);
+  transition: 0.3s;
+}
+
+.icon:hover {
+  transform: skewY(1deg) scale(1.1,1.1);
+}
+
+.text {
+  font-size: xx-large;
+  font-weight: bolder;
+}
