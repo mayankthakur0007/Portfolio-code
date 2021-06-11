@@ -23,23 +23,29 @@ function Home() {
   };
 
   const [show, setIsChecked] = useState(false);
-  const [iconC, chanceIconC] = useState(localStorage.getItem("mode")==="night"?"white": "black");
-  const [day, changeIcon] = useState(localStorage.getItem("mode")==="day"? false: true);
-  const [mode, setMode] = useState(localStorage.getItem("mode")? localStorage.getItem("mode"): "night");
   useEffect(() => {
     setIsChecked(true);
   }, []);
 
+  const [iconC, chanceIconC] = useState(
+    localStorage.getItem("mode") === "night" && localStorage.getItem("mode") ?"white" : "black"
+  );
+  const [day, changeIcon] = useState(
+    localStorage.getItem("mode") === "day" ? true : false
+  );
+  const [mode, setMode] = useState(
+    localStorage.getItem("mode") ? localStorage.getItem("mode") : "night"
+  );
   const modeChange = () => {
     if (mode === "day") {
       setMode("night");
       localStorage.setItem("mode", "night");
       chanceIconC("white");
-      changeIcon(true);
+      changeIcon(false);
     } else {
       setMode("day");
       localStorage.setItem("mode", "day");
-      changeIcon(false);
+      changeIcon(true);
       chanceIconC("black");
     }
   };
@@ -68,7 +74,7 @@ function Home() {
               )}
             </div>
             <div className="mode" onClick={modeChange}>
-              {day ? "Night Mode" : "Day Mode"}
+              {day ? "Day Mode": "Night Mode"}
             </div>
             <Intro />
           </div>

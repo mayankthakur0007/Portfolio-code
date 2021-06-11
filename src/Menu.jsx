@@ -41,19 +41,15 @@ const Menu = (props) => {
     },
   ];
   let location = useLocation();
-
-  if(location.pathname==="/"){
+  console.log(location);
+  if (location.pathname === "/") {
     items = items.filter((item) => {
-      return (
-        item.name !== "/Home"
-      );
+      return item.name !== "/Home";
     });
   }
 
   let navOptions = items.filter((item) => {
-    return (
-      item.name !== location.pathname
-    );
+    return item.name !== location.pathname;
   });
 
   return (
