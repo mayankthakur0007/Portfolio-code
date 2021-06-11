@@ -4,8 +4,9 @@
     background: url("./images/drawer.jpeg") center center fixed; 
     color: white;
     height: 100vh;
+    width: 25vh;
     padding-top: 60px;
-    align-items: left;
+    align-items: center;
   }
   
   .link {
@@ -14,6 +15,7 @@
     align-items:center;
     cursor: pointer;
     height: max-content;
+    border-bottom: 1px solid white;
     max-width: max-content;
     padding: 10px 20px 10px 20px;
     transform: skewY(0deg) scale(1,1);
@@ -25,7 +27,7 @@
   }
   
   .value {
-    font-size: x-small;
+    font-size: small;
     font-weight: bolder;
   }
   
