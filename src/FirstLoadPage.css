@@ -27,7 +27,7 @@
     color: white;
     height: 100vh;
     flex-direction: column;
-    transition: 2s all ease-in;
+    transition: 1s all ease-in;
   }
 
   .day {
@@ -40,7 +40,7 @@
     color: black;
     flex-direction: column;
     height: 100vh;
-    transition: 2s all ease-in;
+    transition: 1s all ease-in;
   }
 
   .mode {

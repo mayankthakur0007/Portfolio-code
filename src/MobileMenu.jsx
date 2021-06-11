@@ -65,7 +65,7 @@ const MobileMenu = (props) => {
       {navOptions.map((field) => {
         return (
           <Link key={field.index} to={field.name} className="Nav">
-            <div className="link">
+            <div className="linkItem">
               {field.name === "/Home" ? (
                 <HomeRoundedIcon style={{ fontSize: 30 }} />
               ) : (
