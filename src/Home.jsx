@@ -3,7 +3,6 @@ import Menu from "./Menu";
 import Intro from "./Intro";
 import MobileMenu from "./MobileMenu";
 import "./Animation.css";
-import Grow from "@material-ui/core/Grow";
 import { Drawer } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
@@ -52,8 +51,7 @@ function Home() {
 
   return (
     <div className="App">
-      <div className="App-content slide">
-        <Grow in={show}>
+      <div className="slide">
           <div className={mode}>
             <div className="menuIcon">
               <MenuRoundedIcon onClick={toggleDrawer(true)}/>
@@ -78,7 +76,6 @@ function Home() {
             </div>
             <Intro />
           </div>
-        </Grow>
       </div>
     </div>
   );
