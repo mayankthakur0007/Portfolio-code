@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/extraCode.txt
 
 # testing
 /coverage

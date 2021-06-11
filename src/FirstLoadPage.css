@@ -1,0 +1,45 @@
+.App {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  .App-content {
+    top: 0;
+    left: -100%;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .slide {
+    left: 0;
+    top: 0;
+    transition: 2s all ease;
+  }
+  
+  .night {
+    display: flex;
+    background: url("./images/night.jpeg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    flex-direction: column;
+    transition: 1s all ease-in;
+  }
+
+  .day {
+    display: flex;
+    background: url("https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: black;
+    flex-direction: column;
+    height: 100vh;
+    transition: 1s all ease-in;
+  }
+  
