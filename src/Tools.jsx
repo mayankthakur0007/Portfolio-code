@@ -1,6 +1,7 @@
 import "./Tools.css";
 import Grow from "@material-ui/core/Grow";
 import { useEffect, useState } from "react";
+import Menu from "./Menu";
 
 const Tools = () => {
   const [show, setIsChecked] = useState(false);
@@ -10,10 +11,8 @@ const Tools = () => {
   return (
     <Grow in={show}>
       <div>
-        <h1>
-          Tools adfaeFae sfaesF AE FAE f ae f ae FA f ae fa F AD FF AF Ads fa sf
-          as
-        </h1>
+      <Menu iconC={"black"}/>
+      <h1>Tools</h1>
       </div>
     </Grow>
   );

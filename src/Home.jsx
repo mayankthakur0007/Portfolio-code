@@ -9,7 +9,7 @@ import NightsStayRoundedIcon from "@material-ui/icons/NightsStayRounded";
 
 function Home() {
   const [show, setIsChecked] = useState(false);
-  const [iconC, chanceIconC] = useState("white")
+  const [iconC, chanceIconC] = useState("white");
   const [day, changeIcon] = useState(true);
   const [mode, setMode] = useState("night");
   useEffect(() => {
@@ -19,37 +19,35 @@ function Home() {
   const modeChange = () => {
     if (mode === "day") {
       setMode("night");
-      chanceIconC("white")
+      chanceIconC("white");
       changeIcon(true);
     } else {
       setMode("day");
       changeIcon(false);
-      chanceIconC("black")
+      chanceIconC("black");
     }
   };
 
   return (
-    <Grow in={show}>
-      <div className="App">
-        <div className="App-content slide">
+    <div className="App">
+      <div className="App-content slide">
+        <Grow in={show}>
           <div className={mode}>
-            <Menu iconC={iconC}/>
+            <Menu iconC={iconC} />
             <div className="mode">
-            {day ? (
-              <WbSunnyRoundedIcon
-                onClick={modeChange}
-              ></WbSunnyRoundedIcon>
-            ) : (
-              <NightsStayRoundedIcon
-                onClick={modeChange}
-              ></NightsStayRoundedIcon>
-            )}
+              {day ? (
+                <WbSunnyRoundedIcon onClick={modeChange}></WbSunnyRoundedIcon>
+              ) : (
+                <NightsStayRoundedIcon
+                  onClick={modeChange}
+                ></NightsStayRoundedIcon>
+              )}
             </div>
             <Intro />
           </div>
-        </div>
+        </Grow>
       </div>
-    </Grow>
+    </div>
   );
 }
 

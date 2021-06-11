@@ -1,6 +1,7 @@
 import "./RecentWork.css";
 import Grow from "@material-ui/core/Grow";
 import { useEffect, useState } from "react";
+import Menu from "./Menu";
 
 const RecentWork = () => {
   const [show, setIsChecked] = useState(false);
@@ -10,7 +11,8 @@ const RecentWork = () => {
   return (
     <Grow in={show}>
       <div>
-        <h1>Recent Work</h1>
+      <Menu iconC={"black"}/>
+      <h1>Recent Work</h1>
       </div>
     </Grow>
   );
