@@ -253,3 +253,11 @@
       transform: scale(.98)
     }
   }
+
+  .button {
+    margin:35px 0 0 55px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .linkText{
+    color: white;
+  }

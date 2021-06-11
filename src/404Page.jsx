@@ -1,9 +1,15 @@
 import "./404Page.css";
+import { Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 const Page404 = () => {
   return (
     <>
+    
       <div className="wrapper">
+        <div className="button">
+        <Button variant="contained" color="primary"><Link to="/Home" style={{textDecoration:"none"}}><h4 className="linkText">Go Home!!</h4></Link></Button>
+        </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
           <title>404</title>
           <g id="Layer_12 yellow-back-fig" data-name="Layer 12">

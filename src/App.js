@@ -11,9 +11,6 @@ const App = () => {
   return (
     <div>
       <Switch>
-      <Route >
-          <Page404 />
-        </Route>
         <Route exact path="/">
           <FirstLoadPage />
         </Route>
@@ -31,6 +28,9 @@ const App = () => {
         </Route>
         <Route exact path="/Tools">
           <Tools />
+        </Route>
+        <Route>
+          <Page404 />
         </Route>
       </Switch>
     </div>
