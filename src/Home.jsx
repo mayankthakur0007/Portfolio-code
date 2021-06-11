@@ -43,6 +43,7 @@ function Home() {
                 ></NightsStayRoundedIcon>
               )}
             </div>
+            {day?  "Night Mode" :"Day Mode"}
             <Intro />
           </div>
         </Grow>

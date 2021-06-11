@@ -42,8 +42,18 @@ const Menu = (props) => {
   ];
   let location = useLocation();
 
+  if(location.pathname==="/"){
+    items = items.filter((item) => {
+      return (
+        item.name !== "/Home"
+      );
+    });
+  }
+
   let navOptions = items.filter((item) => {
-    return item.name !== location.pathname;
+    return (
+      item.name !== location.pathname
+    );
   });
 
   return (
@@ -56,31 +66,31 @@ const Menu = (props) => {
             className={`Navlink ${props.iconC}`}
           >
             <div className="link">
-                {field.name === "/Home" ? (
-                  <HomeRoundedIcon style={{ fontSize: 40 }} />
-                ) : (
-                  ""
-                )}
-                {field.name === "/AboutMe" ? (
-                  <EmojiPeopleIcon style={{ fontSize: 40 }} />
-                ) : (
-                  ""
-                )}
-                {field.name === "/Tools" ? (
-                  <BuildIcon style={{ fontSize: 40 }} />
-                ) : (
-                  ""
-                )}
-                {field.name === "/RecentWork" ? (
-                  <SportsHandballRoundedIcon style={{ fontSize: 40 }} />
-                ) : (
-                  ""
-                )}
-                {field.name === "/Contact" ? (
-                  <ContactsRoundedIcon style={{ fontSize: 40 }} />
-                ) : (
-                  ""
-                )}
+              {field.name === "/Home" ? (
+                <HomeRoundedIcon style={{ fontSize: 40 }} />
+              ) : (
+                ""
+              )}
+              {field.name === "/AboutMe" ? (
+                <EmojiPeopleIcon style={{ fontSize: 40 }} />
+              ) : (
+                ""
+              )}
+              {field.name === "/Tools" ? (
+                <BuildIcon style={{ fontSize: 40 }} />
+              ) : (
+                ""
+              )}
+              {field.name === "/RecentWork" ? (
+                <SportsHandballRoundedIcon style={{ fontSize: 40 }} />
+              ) : (
+                ""
+              )}
+              {field.name === "/Contact" ? (
+                <ContactsRoundedIcon style={{ fontSize: 40 }} />
+              ) : (
+                ""
+              )}
               <div className="text">{field.text}</div>
             </div>
           </Link>

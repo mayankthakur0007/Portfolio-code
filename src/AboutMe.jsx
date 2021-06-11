@@ -8,6 +8,7 @@ const AboutMe = () => {
   useEffect(()=>{
     setIsChecked(true);
   },[])
+  
   return (
     <Grow in={show}>
     <div className="outerBox">

@@ -1,9 +1,9 @@
 import "./Animation.css";
-
+import Clock from "./Clock";
 const Intro = () => {
   return (
     <div className="loadAnimate">
-      <p>Nothing bro!!</p>
+     
     </div>
   );
 };

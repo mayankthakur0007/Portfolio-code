@@ -51,6 +51,7 @@ function FirstLoadPage() {
                 ></NightsStayRoundedIcon>
               )}
             </div>
+            {day? "Day Mode": "Night Mode" }
             <Intro />
           </div>
         </div>
