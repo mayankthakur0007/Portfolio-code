@@ -4,6 +4,7 @@ import Intro from "./Intro";
 import LoadingScreen from "./LoadingScreen";
 import "./Animation.css";
 import { useEffect, useState } from "react";
+import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
 import NightsStayRoundedIcon from "@material-ui/icons/NightsStayRounded";
 
@@ -39,22 +40,29 @@ function FirstLoadPage() {
       <div className="loading">
         <LoadingScreen></LoadingScreen>
       </div>
-        <div className={setContentClass}>
-          <div className={mode}>
-            <Menu iconC={iconC} />
-            <div className="mode">
-              {day ? (
-                <WbSunnyRoundedIcon onClick={modeChange}></WbSunnyRoundedIcon>
-              ) : (
-                <NightsStayRoundedIcon
-                  onClick={modeChange}
-                ></NightsStayRoundedIcon>
-              )}
-            </div>
-            {day? "Day Mode": "Night Mode" }
-            <Intro />
+      <div className={setContentClass}>
+        <div className={mode}>
+          <div className="menuIcon">
+            <MenuRoundedIcon />
           </div>
+          <div className="menu">
+            <Menu iconC={iconC} />
+          </div>
+          <div className="mode">
+            {day ? (
+              <WbSunnyRoundedIcon onClick={modeChange}></WbSunnyRoundedIcon>
+            ) : (
+              <NightsStayRoundedIcon
+                onClick={modeChange}
+              ></NightsStayRoundedIcon>
+            )}
+          </div>
+          <div className="mode" onClick={modeChange}>
+            {day ? "Night Mode" : "Day Mode"}
+          </div>
+          <Intro />
         </div>
+      </div>
     </div>
   );
 }

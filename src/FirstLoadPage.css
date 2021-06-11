@@ -42,4 +42,25 @@
     height: 100vh;
     transition: 2s all ease-in;
   }
+
+  .mode {
+    cursor:grabbing;
+  }
+
+  .menuIcon {
+    display:none;
+  }
   
+  @media (max-width: 414px) {
+     .menu{
+      display: none;
+      }
+     .menuIcon {
+      display: block;
+      position: fixed;
+      margin: 15px 0 0 15px;
+    }
+    .mode {
+      margin-top:15px;
+    }
+  }

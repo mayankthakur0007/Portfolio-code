@@ -6,6 +6,7 @@ import Grow from "@material-ui/core/Grow";
 import { useEffect, useState } from "react";
 import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
 import NightsStayRoundedIcon from "@material-ui/icons/NightsStayRounded";
+import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 
 function Home() {
   const [show, setIsChecked] = useState(false);
@@ -33,7 +34,12 @@ function Home() {
       <div className="App-content slide">
         <Grow in={show}>
           <div className={mode}>
-            <Menu iconC={iconC} />
+            <div className="menuIcon">
+              <MenuRoundedIcon />
+            </div>
+            <div className="menu">
+              <Menu iconC={iconC} />
+            </div>
             <div className="mode">
               {day ? (
                 <WbSunnyRoundedIcon onClick={modeChange}></WbSunnyRoundedIcon>
@@ -43,7 +49,9 @@ function Home() {
                 ></NightsStayRoundedIcon>
               )}
             </div>
-            {day?  "Night Mode" :"Day Mode"}
+            <div className="mode" onClick={modeChange}>
+              {day ? "Night Mode" : "Day Mode"}
+            </div>
             <Intro />
           </div>
         </Grow>
