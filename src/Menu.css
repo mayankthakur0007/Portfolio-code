@@ -21,10 +21,12 @@
 
 .black {
   color: black;
+  border-right: 1px solid black;
 }
 
 .white {
   color: white;
+  border-right: 1px solid white;
 }
 
 .icon:hover {
@@ -36,6 +38,11 @@
   font-weight: bolder;
 }
 
-.Navlink {
+.Navlink:nth-child(n) {
   text-decoration: none;
+  padding-right: 80px;
+}
+
+.Navlink:last-child {
+  border-right: none;
 }

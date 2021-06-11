@@ -18,14 +18,14 @@ function Home() {
     right: false,
   });
 
-  const toggleDrawer = (open) => (event) => {
+  const toggleDrawer = (open) => () => {
     setState({ ...state, true: open });
   };
 
   const [show, setIsChecked] = useState(false);
-  const [iconC, chanceIconC] = useState("white");
-  const [day, changeIcon] = useState(true);
-  const [mode, setMode] = useState("night");
+  const [iconC, chanceIconC] = useState(localStorage.getItem("mode")==="night"?"white": "black");
+  const [day, changeIcon] = useState(localStorage.getItem("mode")==="day"? false: true);
+  const [mode, setMode] = useState(localStorage.getItem("mode")? localStorage.getItem("mode"): "night");
   useEffect(() => {
     setIsChecked(true);
   }, []);
@@ -33,10 +33,12 @@ function Home() {
   const modeChange = () => {
     if (mode === "day") {
       setMode("night");
+      localStorage.setItem("mode", "night");
       chanceIconC("white");
       changeIcon(true);
     } else {
       setMode("day");
+      localStorage.setItem("mode", "day");
       changeIcon(false);
       chanceIconC("black");
     }

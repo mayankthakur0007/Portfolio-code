@@ -10,7 +10,7 @@ const Tools = () => {
   }, []);
   return (
     <Grow in={show}>
-      <div>
+      <div className="contentTools">
       <Menu iconC={"black"}/>
       <h1>Tools</h1>
       </div>

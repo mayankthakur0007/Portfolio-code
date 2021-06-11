@@ -18,7 +18,7 @@ function FirstLoadPage() {
     right: false,
   });
 
-  const toggleDrawer = (open) => (event) => {
+  const toggleDrawer = (open) => () => {
     setState({ ...state, true: open });
   };
   const [setContentClass, addContentClass] = useState("App-content");
@@ -32,17 +32,19 @@ function FirstLoadPage() {
     }, 6000);
   }, []);
 
-  const [iconC, chanceIconC] = useState("white");
-  const [day, changeIcon] = useState(true);
-  const [mode, setMode] = useState("night");
+  const [iconC, chanceIconC] = useState(localStorage.getItem("mode")==="night"?"white": "black");
+  const [day, changeIcon] = useState(localStorage.getItem("mode")==="day"? true: false);
+  const [mode, setMode] = useState(localStorage.getItem("mode")? localStorage.getItem("mode"): "night");
 
   const modeChange = () => {
     if (mode === "day") {
       setMode("night");
+      localStorage.setItem("mode", "night");
       chanceIconC("white");
       changeIcon(true);
     } else {
       setMode("day");
+      localStorage.setItem("mode", "day");
       changeIcon(false);
       chanceIconC("black");
     }
