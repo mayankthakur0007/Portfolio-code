@@ -8,3 +8,20 @@
     color: white;
     height: 100vh;
 }
+
+
+.menuOpen {
+    display:none;
+    color: black;
+  }
+  
+  @media (max-width: 414px) {
+     .desktopMenu{
+      display: none;
+      }
+     .menuOpen {
+      display: block;
+      position: fixed;
+      margin: 15px 0 0 15px;
+    }
+  }

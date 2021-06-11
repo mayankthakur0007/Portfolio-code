@@ -5,10 +5,10 @@ import LoadingScreen from "./LoadingScreen";
 import "./Animation.css";
 import MobileMenu from "./MobileMenu";
 import { Drawer } from "@material-ui/core";
-import { useEffect, useState } from "react";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
 import NightsStayRoundedIcon from "@material-ui/icons/NightsStayRounded";
+import { useEffect, useState } from "react";
 
 function FirstLoadPage() {
   const [state, setState] = useState({
@@ -32,9 +32,15 @@ function FirstLoadPage() {
     }, 6000);
   }, []);
 
-  const [iconC, chanceIconC] = useState(localStorage.getItem("mode")==="night"?"white": "black");
-  const [day, changeIcon] = useState(localStorage.getItem("mode")==="day"? true: false);
-  const [mode, setMode] = useState(localStorage.getItem("mode")? localStorage.getItem("mode"): "night");
+  const [iconC, chanceIconC] = useState(
+    localStorage.getItem("mode") === "night" ? "white" : "black"
+  );
+  const [day, changeIcon] = useState(
+    localStorage.getItem("mode") === "day" ? true : false
+  );
+  const [mode, setMode] = useState(
+    localStorage.getItem("mode") ? localStorage.getItem("mode") : "night"
+  );
 
   const modeChange = () => {
     if (mode === "day") {
@@ -56,11 +62,11 @@ function FirstLoadPage() {
       </div>
       <div className={setContentClass}>
         <div className={mode}>
-        <div className="menuIcon">
-              <MenuRoundedIcon onClick={toggleDrawer(true)}/>
-            </div>
-            <Drawer open={state[true]} onClose={toggleDrawer(false)}>
-           <MobileMenu closeDrawer={toggleDrawer(false)}/>
+          <div className="menuIcon">
+            <MenuRoundedIcon onClick={toggleDrawer(true)} />
+          </div>
+          <Drawer open={state[true]} onClose={toggleDrawer(false)}>
+            <MobileMenu closeDrawer={toggleDrawer(false)} />
           </Drawer>
           <div className="menu">
             <Menu iconC={iconC} />
