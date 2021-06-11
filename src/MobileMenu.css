@@ -1,0 +1,42 @@
+.content {
+    flex-direction: column;
+    display: flex;
+    background: url("https://images.pexels.com/photos/716398/pexels-photo-716398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") center center fixed; 
+    color: white;
+    height: 100vh;
+    padding-top: 60px;
+    align-items: left;
+  }
+  
+  .link {
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    cursor: pointer;
+    height: max-content;
+    max-width: max-content;
+    padding: 10px 20px 10px 20px;
+    transform: skewY(0deg) scale(1,1);
+    transition: 0.3s;
+  }
+  
+  .icon:hover {
+    transform: skewY(1deg) scale(1.1,1.1);
+  }
+  
+  .value {
+    font-size: x-small;
+    font-weight: bolder;
+  }
+  
+  .Nav {
+    text-decoration: none;
+    color: white;
+  }
+
+  .close {
+    position: absolute;
+    padding: 5px 3px 0 0;
+    top:0;
+    right: 0;
+  }

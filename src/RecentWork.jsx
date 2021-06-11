@@ -10,7 +10,7 @@ const RecentWork = () => {
   }, []);
   return (
     <Grow in={show}>
-      <div>
+      <div className="recentContainer">
       <Menu iconC={"black"}/>
       <h1>Recent Work</h1>
       </div>

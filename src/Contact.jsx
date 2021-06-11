@@ -8,7 +8,7 @@ const Contact = () => {
   useEffect(()=>{
     setIsChecked(true);
   },[])
-  return (<Grow in={show}><div>
+  return (<Grow in={show}><div className="contactContainer">
       <Menu iconC={"black"}/>
       <h1>Contact</h1>
   </div>
