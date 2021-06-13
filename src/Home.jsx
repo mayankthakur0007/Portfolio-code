@@ -4,7 +4,7 @@ import Intro from "./Intro";
 import MobileMenu from "./MobileMenu";
 import "./Animation.css";
 import { Drawer } from "@material-ui/core";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
 import NightsStayRoundedIcon from "@material-ui/icons/NightsStayRounded";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
@@ -20,11 +20,6 @@ function Home() {
   const toggleDrawer = (open) => () => {
     setState({ ...state, true: open });
   };
-
-  const [show, setIsChecked] = useState(false);
-  useEffect(() => {
-    setIsChecked(true);
-  }, []);
 
   const [iconC, chanceIconC] = useState(
     localStorage.getItem("mode") === "day" && localStorage.getItem("mode") ?"black" : "white"
