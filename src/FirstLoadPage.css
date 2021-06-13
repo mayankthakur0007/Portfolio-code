@@ -32,7 +32,7 @@
 
   .day {
     display: flex;
-    background: url("./images/day.jpg") no-repeat center center fixed; 
+    background: url("./images/day.jpeg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
