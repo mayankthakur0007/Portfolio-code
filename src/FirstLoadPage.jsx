@@ -25,15 +25,14 @@ function FirstLoadPage() {
   useEffect(() => {
     setTimeout(() => {
       addContentClass("App-content slide");
-    }, 4000);
+    }, 3000);
     setTimeout(() => {
-      addContentClass("slide");
       document.querySelector(".loading").innerHTML = "";
-    }, 6000);
+    }, 5000);
   }, []);
 
   const [iconC, chanceIconC] = useState(
-    localStorage.getItem("mode") === "night" && localStorage.getItem("mode") ?"white" : "black"
+    localStorage.getItem("mode") === "day" && localStorage.getItem("mode") ?"black" : "white"
   );
   const [day, changeIcon] = useState(
     localStorage.getItem("mode") === "day" ? true : false

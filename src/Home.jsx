@@ -27,7 +27,7 @@ function Home() {
   }, []);
 
   const [iconC, chanceIconC] = useState(
-    localStorage.getItem("mode") === "night" && localStorage.getItem("mode") ?"white" : "black"
+    localStorage.getItem("mode") === "day" && localStorage.getItem("mode") ?"black" : "white"
   );
   const [day, changeIcon] = useState(
     localStorage.getItem("mode") === "day" ? true : false
