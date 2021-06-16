@@ -1,8 +1,9 @@
 .content {
     flex-direction: column;
     display: flex;
+    border-right: 3px white solid;
     background:center center fixed; 
-    background: url("https://images.pexels.com/photos/3934623/pexels-photo-3934623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background: url("https://images.pexels.com/photos/4004375/pexels-photo-4004375.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
     color: white;
     height: 100vh;
     width: 25vh;
@@ -39,7 +40,7 @@
 
   .close {
     position: absolute;
-    padding: 5px 3px 0 0;
+    padding: 7px 7px 0 0;
     top:0;
     right: 0;
   }
