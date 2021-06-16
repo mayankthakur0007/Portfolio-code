@@ -5,12 +5,12 @@ import Page404 from "./404Page";
 import Contact from "./Contact";
 import RecentWork from "./RecentWork";
 import Tools from "./Tools";
-import { Switch, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
-      <Switch>
+      <HashRouter>
         <Route exact path="/">
           <FirstLoadPage />
         </Route>
@@ -29,10 +29,7 @@ const App = () => {
         <Route exact path="/Tools">
           <Tools />
         </Route>
-        <Route>
-          <Page404 />
-        </Route>
-      </Switch>
+      </HashRouter>
     </div>
   );
 };

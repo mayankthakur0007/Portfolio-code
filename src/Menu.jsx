@@ -41,7 +41,6 @@ const Menu = (props) => {
     },
   ];
   let location = useLocation();
-  console.log(location);
   if (location.pathname === "/") {
     items = items.filter((item) => {
       return item.name !== "/Home";

@@ -28,7 +28,7 @@ function FirstLoadPage() {
     }, 3000);
     setTimeout(() => {
       document.querySelector(".loading").innerHTML = "";
-    }, 5000);
+    }, 4000);
   }, []);
 
   const [iconC, chanceIconC] = useState(
