@@ -11,7 +11,7 @@ const Menu = (props) => {
   let items = [
     {
       index: 1,
-      name: "/Home",
+      name: "/",
       text: "Home",
       tag: "<HomeRoundedIcon style={{ fontSize: 40 }} />",
     },
@@ -61,7 +61,7 @@ const Menu = (props) => {
             className={`Navlink ${props.iconC}`}
           >
             <div className="link">
-              {field.name === "/Home" ? (
+              {field.text === "Home" ? (
                 <HomeRoundedIcon style={{ fontSize: 40 }} />
               ) : (
                 ""

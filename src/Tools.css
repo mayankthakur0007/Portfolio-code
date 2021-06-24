@@ -1,27 +1,26 @@
-.contentTools{
-    background: url("https://images.pexels.com/photos/3661238/pexels-photo-3661238.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin-top:-22px;
-    color: white;
-    height: 100vh;
+.outerBox{
+  background: url("./images/tools.jpeg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  height: 100vh;
 }
 
 
 .menuOpen {
-    display:none;
-    color: black;
-  }
-  
-  @media (max-width: 414px) {
-     .desktopMenu{
-      display: none;
-      }
-     .menuOpen {
-      display: block;
-      position: fixed;
-      margin: 15px 0 0 15px;
+  display:none;
+  color: black;
+}
+
+@media (max-width: 414px) {
+   .desktopMenu{
+    display: none;
     }
+   .menuOpen {
+    display: block;
+    position: fixed;
+    margin: 15px 0 0 15px;
   }
+}

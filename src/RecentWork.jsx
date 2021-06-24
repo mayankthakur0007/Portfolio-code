@@ -23,20 +23,20 @@ const RecentWork = () => {
     setState({ ...state, true: open });
   };
   return (
-    <Grow in={show}>
-      <div className="recentContainer">
-      <div className="desktopMenu">
-      <Menu iconC={"black"}/>
-      </div>
-      <div className="menuOpen">
-            <MenuRoundedIcon onClick={toggleDrawer(true)} />
-          </div>
-          <Drawer open={state[true]} onClose={toggleDrawer(false)}>
-            <MobileMenu closeDrawer={toggleDrawer(false)} />
-          </Drawer>
-      <h1>Recent Work</h1>
-      </div>
-    </Grow>
+     <Grow in={show}>
+     <div className="recentContainer">
+       <div className="desktopMenu">
+         <Menu iconC={"black"} />
+       </div>
+       <div className="menuOpen">
+         <MenuRoundedIcon onClick={toggleDrawer(true)} />
+       </div>
+       <Drawer open={state[true]} onClose={toggleDrawer(false)}>
+         <MobileMenu closeDrawer={toggleDrawer(false)} />
+       </Drawer>
+       Recent
+     </div>
+   </Grow>
   );
 };
 

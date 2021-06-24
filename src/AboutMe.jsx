@@ -25,7 +25,7 @@ const AboutMe = () => {
 
   return (
     <Grow in={show}>
-      <div className="outerBox">
+      <div className="aboutMeContainer">
         <div className="desktopMenu">
           <Menu iconC={"black"} />
         </div>

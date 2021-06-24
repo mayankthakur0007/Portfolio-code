@@ -12,7 +12,7 @@ const MobileMenu = (props) => {
   let items = [
     {
       index: 1,
-      name: "/Home",
+      name: "/",
       text: "Home",
       tag: "<HomeRoundedIcon style={{ fontSize: 40 }} />",
     },
@@ -66,7 +66,7 @@ const MobileMenu = (props) => {
         return (
           <Link key={field.index} to={field.name} className="Nav">
             <div className="linkItem">
-              {field.name === "/Home" ? (
+              {field.name === "/" ? (
                 <HomeRoundedIcon style={{ fontSize: 30 }} />
               ) : (
                 ""

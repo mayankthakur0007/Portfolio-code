@@ -1,8 +1,7 @@
 .contactContainer {
-    background: url("https://images.pexels.com/photos/5083410/pexels-photo-5083410.jpeg?cs=srgb&dl=pexels-cottonbro-5083410.jpg&fm=jpg") no-repeat center center fixed; 
+    background: url("./images/contact.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    margin-top: -22px;
     height: 100vh;
     -o-background-size: cover;
     background-size: cover;

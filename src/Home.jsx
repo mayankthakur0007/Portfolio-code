@@ -1,10 +1,11 @@
-import "./FirstLoadPage.css";
+import "./Home.css";
 import Menu from "./Menu";
 import Intro from "./Intro";
+import { Grow } from "@material-ui/core";
 import MobileMenu from "./MobileMenu";
 import "./Animation.css";
 import { Drawer } from "@material-ui/core";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
 import NightsStayRoundedIcon from "@material-ui/icons/NightsStayRounded";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
@@ -16,7 +17,10 @@ function Home() {
     bottom: false,
     right: false,
   });
-
+  const [show, setIsChecked] = useState(false);
+  useEffect(()=>{
+    setIsChecked(true);
+  },[])
   const toggleDrawer = (open) => () => {
     setState({ ...state, true: open });
   };
@@ -45,6 +49,7 @@ function Home() {
   };
 
   return (
+    <Grow in={show}>
     <div className="App">
       <div className="slide">
           <div className={mode}>
@@ -73,6 +78,7 @@ function Home() {
           </div>
       </div>
     </div>
+    </Grow>
   );
 }
 

@@ -24,19 +24,19 @@ const Tools = () => {
   };
   return (
     <Grow in={show}>
-      <div className="contentTools">
+    <div className="outerBox">
       <div className="desktopMenu">
-      <Menu iconC={"black"}/>
+        <Menu iconC={"black"} />
       </div>
       <div className="menuOpen">
-            <MenuRoundedIcon onClick={toggleDrawer(true)} />
-          </div>
-          <Drawer open={state[true]} onClose={toggleDrawer(false)}>
-            <MobileMenu closeDrawer={toggleDrawer(false)} />
-          </Drawer>
-      <h1>Tools</h1>
+        <MenuRoundedIcon onClick={toggleDrawer(true)} />
       </div>
-    </Grow>
+      <Drawer open={state[true]} onClose={toggleDrawer(false)}>
+        <MobileMenu closeDrawer={toggleDrawer(false)} />
+      </Drawer>
+      tools
+    </div>
+  </Grow>
   );
 };
 

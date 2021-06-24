@@ -1,5 +1,5 @@
 import "./Contact.css";
-import Grow from "@material-ui/core/Grow"
+import Grow from "@material-ui/core/Grow";
 import { useEffect, useState } from "react";
 import Menu from "./Menu";
 import MobileMenu from "./MobileMenu";
@@ -8,9 +8,9 @@ import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 
 const Contact = () => {
   const [show, setIsChecked] = useState(false);
-  useEffect(()=>{
+  useEffect(() => {
     setIsChecked(true);
-  },[])
+  }, []);
 
   const [state, setState] = useState({
     top: false,
@@ -22,19 +22,22 @@ const Contact = () => {
   const toggleDrawer = (open) => () => {
     setState({ ...state, true: open });
   };
-  return (<Grow in={show}><div className="contactContainer">
+  return (
+    <Grow in={show}>
+      <div className="contactContainer">
       <div className="desktopMenu">
-      <Menu iconC={"black"}/>
+          <Menu iconC={"black"} />
+        </div>
+        <div className="menuOpen">
+          <MenuRoundedIcon onClick={toggleDrawer(true)} />
+        </div>
+        <Drawer open={state[true]} onClose={toggleDrawer(false)}>
+          <MobileMenu closeDrawer={toggleDrawer(false)} />
+        </Drawer>
+       Contact
       </div>
-      <div className="menuOpen">
-            <MenuRoundedIcon onClick={toggleDrawer(true)} />
-          </div>
-          <Drawer open={state[true]} onClose={toggleDrawer(false)}>
-            <MobileMenu closeDrawer={toggleDrawer(false)} />
-          </Drawer>
-      <h1>Contact</h1>
-  </div>
-  </Grow>);
+    </Grow>
+  );
 };
 
 export default Contact;

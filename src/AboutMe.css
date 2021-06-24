@@ -1,5 +1,5 @@
-.outerBox{
-    background: url("https://images.pexels.com/photos/7059942/pexels-photo-7059942.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center fixed; 
+.aboutMeContainer{
+    background: url("./images/me.jpeg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

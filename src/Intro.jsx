@@ -4,15 +4,15 @@ import { useState, useEffect } from "react";
 import { Grow } from "@material-ui/core";
 
 const Intro = () => {
+
   const [quote, changeQuote] = useState("");
   const [author, changeAuthor] = useState("");
   const [showQuote, changeshowQuote] = useState(false);
 
-  const options = "https://api.quotable.io/random?maxLength=100"
+  const options = "https://api.quotable.io/random?maxLength=100";
 
   useEffect(() => {
     axios(options).then(function (response) {
-      console.log(response)
       changeQuote(response.data.content);
       changeAuthor(response.data.author);
       changeshowQuote(true);
@@ -32,14 +32,12 @@ const Intro = () => {
         </h1>
       </div>
       <Grow in={showQuote}>
-        <div className="blockquote-wrapper">
-          <div className="blockquote">
-            <h1>
-            {quote}
-            </h1>
-            <h4>
-              {author}
-            </h4>
+        <div>
+          <div className="blockquote-wrapper">
+            <div className="blockquote">
+              <h1>{quote}</h1>
+              <h4>{author}</h4>
+            </div>
           </div>
         </div>
       </Grow>

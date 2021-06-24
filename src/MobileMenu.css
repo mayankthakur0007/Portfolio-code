@@ -3,7 +3,7 @@
     display: flex;
     border-right: 3px white solid;
     background:center center fixed; 
-    background: url("https://images.pexels.com/photos/4004375/pexels-photo-4004375.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background: url("./images/drawer.jpeg");
     color: white;
     height: 100vh;
     width: 25vh;
@@ -44,3 +44,5 @@
     top:0;
     right: 0;
   }
+
+  

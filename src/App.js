@@ -1,4 +1,3 @@
-import FirstLoadPage from "./FirstLoadPage";
 import Home from "./Home";
 import AboutMe from "./AboutMe";
 import Page404 from "./404Page";
@@ -12,9 +11,6 @@ const App = () => {
     <div>
       <Switch>
         <Route exact path="/">
-          <FirstLoadPage />
-        </Route>
-        <Route exact path="/Home">
           <Home />
         </Route>
         <Route exact path="/AboutMe">
