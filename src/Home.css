@@ -49,6 +49,10 @@
     cursor:grabbing;
   }
 
+  .menu {
+      margin-right: 5%;
+  }
+
   .menuIcon {
     display:none;
   }

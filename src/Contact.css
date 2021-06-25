@@ -8,7 +8,10 @@
     color: white;
 }
 
-
+.desktopMenu{
+  margin-right: 5%;
+  }
+  
 .menuOpen {
     display:none;
     color: black;

@@ -34,7 +34,11 @@ const Tools = () => {
       <Drawer open={state[true]} onClose={toggleDrawer(false)}>
         <MobileMenu closeDrawer={toggleDrawer(false)} />
       </Drawer>
-      tools
+      toolseythsfhr
+      aergaertgae
+      asrtgawrgWRGH
+      SETHAETHJAEGBADTH
+      WRTW
     </div>
   </Grow>
   );

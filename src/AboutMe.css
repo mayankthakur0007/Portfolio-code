@@ -8,6 +8,9 @@
     height: 100vh;
 }
 
+.desktopMenu{
+  margin-right: 5%;
+  }
 
 .menuOpen {
     display:none;
