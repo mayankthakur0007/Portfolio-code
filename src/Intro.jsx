@@ -22,6 +22,7 @@ const Intro = () => {
   return (
     <div className="introContent">
       <div className="nameContainer">
+        <h1>Hi, I'm</h1>
         <h1 className="name">
           <span className="first">M</span>
           <span className="rest">ayank </span>

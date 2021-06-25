@@ -2,9 +2,12 @@
 .name {
     animation: name 3s 1;
     margin-top: -5px;
-    font-family: 'Amatic SC', cursive;
-    font-family: 'Caveat', cursive;}
+}
 
+.introContent{
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Caveat', cursive;
+}
 @keyframes name{
     0%{
         opacity: 0;
@@ -22,5 +25,25 @@
 .rest{
     font-size: 100px;
 }
+
+@media (max-width: 925px) {
+    .first{
+        font-size: 100px;
+    }
+    
+    .rest{
+        font-size: 45px;
+    }
+  }
+  
+  @media (max-width: 435px) {
+    .first{
+        font-size: 70px;
+    }
+    
+    .rest{
+        font-size: 30px;
+    }
+  }
  
  

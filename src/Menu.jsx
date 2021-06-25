@@ -38,7 +38,7 @@ const Menu = (props) => {
 
   return (
     <div className="loadAnimate containers">
-      <div className="menu">
+      <div className="menuBox">
         {navOptions.map((field) => {
           return (
             <Link

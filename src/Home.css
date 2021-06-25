@@ -61,6 +61,19 @@
      .menu{
       display: none;
       }
+      .night {
+        display: flex;
+        background: url("./images/nightmobile.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        z-index: -1;
+        -o-background-size: cover;
+        background-size: cover;
+        color: white;
+        height: 100vh;
+        flex-direction: column;
+        transition: 1s all ease-in;
+      }
      .menuIcon {
       display: block;
       position: fixed;

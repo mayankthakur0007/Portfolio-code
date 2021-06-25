@@ -4,7 +4,7 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
-.menu {
+.menuBox {
   flex-direction: row;
   align-items: center;
   display: flex;
