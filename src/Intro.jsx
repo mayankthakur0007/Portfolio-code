@@ -9,7 +9,7 @@ const Intro = () => {
   const [author, changeAuthor] = useState("");
   const [showQuote, changeshowQuote] = useState(false);
 
-  const options = "https://api.quotable.io/random?maxLength=100";
+  const options = "https://api.quotable.io/random?maxLength=60";
 
   useEffect(() => {
     axios(options).then(function (response) {
@@ -34,11 +34,11 @@ const Intro = () => {
       </div>
       <Grow in={showQuote}>
         <div>
-          <div className="blockquote-wrapper">
+          <div className="blockquoteWrapper">
             <div className="blockquote">
               <h1>{quote}</h1>
-              <h4>{author}</h4>
             </div>
+            <div className="author"><h4>-{author}</h4></div>
           </div>
         </div>
       </Grow>

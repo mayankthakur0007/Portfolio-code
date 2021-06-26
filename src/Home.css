@@ -51,13 +51,14 @@
 
   .menu {
       margin-right: 5%;
+
   }
 
   .menuIcon {
     display:none;
   }
   
-  @media (max-width: 414px) {
+  @media (max-width: 465px) {
      .menu{
       display: none;
       }

@@ -16,6 +16,7 @@
   align-items: flex-end;
   cursor: pointer;
   height: max-content;
+  margin-bottom: 5px;
   max-width: max-content;
   padding: 10px 20px 10px 20px;
   transform: skewY(0deg) scale(1,1);
@@ -34,10 +35,49 @@
   transform: skewY(1deg) scale(1.1,1.1);
 }
 
-.text {
+.whitemode {
   font-size: large;
   font-weight: bolder;
+  padding: 10px;
+  background:
+  linear-gradient(
+    to bottom, #ff0000 0%,
+    #ff0000 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  text-decoration: none;
+  transition: background-size .2s;
 }
+
+.whitemode:hover {
+  background-size: 4px 50px;
+}
+
+
+.blackmode {
+  font-size: large;
+  font-weight: bolder;
+  padding: 10px;
+  background:
+  linear-gradient(
+    to bottom, #000000 0%,
+    #000000 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  color:black;
+  background-size: 4px 4px;
+  text-decoration: none;
+  transition: background-size .2s;
+}
+
+.blackmode:hover {
+  background-size: 4px 50px;
+  color: white;
+}
+
 
 .Navlink:nth-child(n) {
   text-decoration: none;

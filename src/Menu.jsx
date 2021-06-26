@@ -3,6 +3,7 @@ import "./Menu.css";
 import { Link, useLocation } from "react-router-dom";
 
 const Menu = (props) => {
+
   let items = [
     {
       index: 1,
@@ -47,7 +48,7 @@ const Menu = (props) => {
               className={`Navlink ${props.iconC}`}
             >
               <div className="link">
-                <div className="text">{field.text}</div>
+                <span className={`${props.iconC}mode`}>{field.text}</span>
               </div>
             </Link>
           );

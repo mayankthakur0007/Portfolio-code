@@ -26,13 +26,17 @@
     font-size: 100px;
 }
 
-@media (max-width: 925px) {
+@media (max-width: 1381px) {
     .first{
         font-size: 100px;
     }
     
     .rest{
         font-size: 45px;
+    }
+    
+    .blockquoteWrapper{
+     display: none;
     }
   }
   
@@ -46,4 +50,11 @@
     }
   }
  
- 
+ .blockquoteWrapper{
+     padding: 2%;
+     border: 0.1px solid;
+     width:10%;
+     position: absolute;
+     bottom: 2%;
+     left: 2%;
+ }
