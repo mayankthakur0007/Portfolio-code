@@ -5,7 +5,6 @@
 }
 
 .introContent{
-    font-family: 'Amatic SC', cursive;
     font-family: 'Caveat', cursive;
 }
 @keyframes name{
@@ -26,7 +25,7 @@
     font-size: 100px;
 }
 
-@media (max-width: 1381px) {
+@media (max-width: 925px) {
     .first{
         font-size: 100px;
     }
@@ -35,25 +34,45 @@
         font-size: 45px;
     }
     
-    .blockquoteWrapper{
-     display: none;
-    }
   }
-  
-  @media (max-width: 435px) {
-    .first{
-        font-size: 70px;
+
+
+  @media (max-height: 800px) {
+    .blockquoteWrapper{
+     font-size: small;
     }
     
-    .rest{
-        font-size: 30px;
-    }
   }
- 
+
+  @media (max-height: 715px) {
+    .blockquoteWrapper{
+     font-size: x-small;
+    }
+    
+  }
+
+  @media (max-height: 681px) {
+    .blockquoteWrapper{
+     font-size: 8px;
+    }
+    
+  }
+
+  @media (max-width: 320px) {
+    .blockquoteWrapper{
+    display: none;
+    }
+    
+  }
+  @media (max-height: 615px) {
+    .blockquoteWrapper{
+    display: none;
+    }
+    
+  }
+
  .blockquoteWrapper{
      padding: 2%;
-     border: 0.1px solid;
-     width:10%;
      position: absolute;
      bottom: 2%;
      left: 2%;
