@@ -58,12 +58,12 @@ color: black;
 
   }
 
-  .menuIcon {
-    display:none;
+  .nav{
+    display: block;
   }
-  
-  @media (max-width: 465px) {
-     .menu{
+
+  @media (max-width: 515px) {
+     .nav{
       display: none;
       }
       .night {
@@ -79,11 +79,7 @@ color: black;
         flex-direction: column;
         transition: 1s all ease-in;
       }
-     .menuIcon {
-      display: block;
-      position: fixed;
-      margin: 15px 0 0 15px;
-    }
+
     .mode {
       margin-top:15px;
     }

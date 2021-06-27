@@ -11,7 +11,7 @@ const RecentWork = () => {
   return (
      <Grow in={show}>
      <div className="recentContainer">
-     <div>
+   
        <h1>Recent</h1>
           <div >
             markup:via CSS You have more control over how the image is
@@ -36,7 +36,7 @@ const RecentWork = () => {
             Ideally we want to use our component as if it was regular HTML
             markup:
           </div>
-        </div>
+
      </div>
    </Grow>
   );

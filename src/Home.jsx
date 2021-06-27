@@ -6,24 +6,12 @@ import Contact from "./Contact";
 import Intro from "./Intro";
 import { Grow } from "@material-ui/core";
 import "./Animation.css";
-import MobileMenu from "./MobileMenu";
-import { Drawer } from "@material-ui/core";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
 import NightsStayRoundedIcon from "@material-ui/icons/NightsStayRounded";
-import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 import Menu from "./Menu";
 
 function Home() {
-  const [state, setState] = useState({
-    top: false,
-    left: false,
-    bottom: false,
-    right: false,
-  });
-  const toggleDrawer = (open) => () => {
-    setState({ ...state, true: open });
-  };
 
   const [iconC, chanceIconC] = useState(
     localStorage.getItem("mode") === "day" && localStorage.getItem("mode")
@@ -54,14 +42,8 @@ function Home() {
     <div className="App">
       <div className="slide">
         <div id="home" className={mode}>
-          <div className="menuIcon">
-            <MenuRoundedIcon onClick={toggleDrawer(true)} />
-          </div>
-          <Drawer open={state[true]} onClose={toggleDrawer(false)}>
-            <MobileMenu closeDrawer={toggleDrawer(false)} />
-          </Drawer>
-          <div>
-          <Menu iconC={iconC}/>
+          <div className="nav">
+            <Menu iconC={iconC} />
           </div>
           <div className="mode">
             {day ? (
