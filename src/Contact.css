@@ -1,15 +1,6 @@
-.contactContainerday {
-    color: black;
-    background-color: white;
-    height: 100vh;
-}
-
-.contactContainernight {
-  color: white;
-  background-color: black;
+.contactContainer{
   height: 100vh;
 }
-
 .desktopMenu{
   margin-right: 5%;
   }

@@ -1,51 +1,39 @@
 import "./Animation.css";
 import "./MobileMenu.css";
-import { Link, useLocation } from "react-router-dom";
 import CloseRoundedIcon from "@material-ui/icons/CloseRounded";
 
 const MobileMenu = (props) => {
-  let items = [
+  let navOptions = [
     {
       index: 1,
-      name: "/",
+      name: "#home",
       text: "Home",
     },
     {
       index: 2,
-      name: "/AboutMe",
+      name: "#aboutMe",
       text: "About Me",
     },
     {
       index: 3,
-      name: "/Tools",
+      name: "#tools",
       text: "Tools",
     },
     {
       index: 4,
-      name: "/RecentWork",
+      name: "#recent",
       text: "Recent Work",
     },
     {
       index: 5,
-      name: "/Contact",
+      name: "#contact",
       text: "Contact",
     },
   ];
-  let location = useLocation();
-
-  if (location.pathname === "/") {
-    items = items.filter((item) => {
-      return item.name !== "/Home";
-    });
-  }
 
   const close = () => {
     props.closeDrawer();
   };
-
-  let navOptions = items.filter((item) => {
-    return item.name !== location.pathname;
-  });
 
   return (
     <div className="loadAnimate content">
@@ -54,11 +42,11 @@ const MobileMenu = (props) => {
       </div>
       {navOptions.map((field) => {
         return (
-          <Link key={field.index} to={field.name} className="Nav">
+          <a key={field.index} href={field.name} className="Nav">
             <div className="linkItem">
               <div className="value">{field.text}</div>
             </div>
-          </Link>
+          </a>
         );
       })}
     </div>

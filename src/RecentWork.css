@@ -1,16 +1,6 @@
-.recentContainerday{
-    color: black;
-    background-color: white;
-    height: 100vh;
-}
-
-.recentContainernight{
-  color: white;
-  background-color: black;
+.recentContainer{
   height: 100vh;
 }
-
-
 .desktopMenu{
   margin-right: 5%;
   }

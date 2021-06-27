@@ -3,11 +3,13 @@
 .aboutMeday {
     color: black;
     background-color: white;
+    height: 100%;
 }
 
 .aboutMenight{
   color: white;
   background: black;
+  height:100%;
 }
 
 

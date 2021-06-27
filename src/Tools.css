@@ -1,12 +1,4 @@
-.outerBoxday{
-  color: black;
-  background-color: white;
-  height: 100vh;
-}
-
-.outerBoxnight{
-  color: white;
-  background-color: black;
+.outerBox{
   height: 100vh;
 }
 
