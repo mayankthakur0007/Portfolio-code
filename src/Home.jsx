@@ -10,7 +10,7 @@ import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
 import NightsStayRoundedIcon from "@material-ui/icons/NightsStayRounded";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 
-function Home() {
+function Home(props) {
   const [state, setState] = useState({
     top: false,
     left: false,
@@ -37,11 +37,13 @@ function Home() {
   const modeChange = () => {
     if (mode === "day") {
       setMode("night");
+      props.getMode("night");
       localStorage.setItem("mode", "night");
       chanceIconC("white");
       changeIcon(false);
     } else {
       setMode("day");
+      props.getMode("day");
       localStorage.setItem("mode", "day");
       changeIcon(true);
       chanceIconC("black");

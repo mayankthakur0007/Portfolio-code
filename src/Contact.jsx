@@ -6,11 +6,13 @@ import MobileMenu from "./MobileMenu";
 import { Drawer } from "@material-ui/core";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 
-const Contact = () => {
+const Contact = (props) => {
+  const [colorText, changeColorText] = useState();
   const [show, setIsChecked] = useState(false);
   useEffect(() => {
     setIsChecked(true);
-  }, []);
+    props.mode==="night"?changeColorText("white"):changeColorText("black")
+  }, [props]);
 
   const [state, setState] = useState({
     top: false,
@@ -24,9 +26,9 @@ const Contact = () => {
   };
   return (
     <Grow in={show}>
-      <div className="contactContainer">
+      <div className={`contactContainer${props.mode}`}>
       <div className="desktopMenu">
-          <Menu iconC={"black"} />
+          <Menu iconC={colorText} />
         </div>
         <div className="menuOpen">
           <MenuRoundedIcon onClick={toggleDrawer(true)} />

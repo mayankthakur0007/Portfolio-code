@@ -1,11 +1,13 @@
-.contactContainer {
-    background: url("./images/contact.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+.contactContainerday {
+    color: black;
+    background-color: white;
     height: 100vh;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
+}
+
+.contactContainernight {
+  color: white;
+  background-color: black;
+  height: 100vh;
 }
 
 .desktopMenu{

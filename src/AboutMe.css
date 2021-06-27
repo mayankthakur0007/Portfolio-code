@@ -1,11 +1,13 @@
-.aboutMeContainer{
-    background: url("./images/me.jpeg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
+.aboutMeday{
+    color: black;
+    background-color: white;
     height: 100vh;
+}
+
+.aboutMenight{
+  color: white;
+  background-color: black;
+  height: 100vh;
 }
 
 .desktopMenu{

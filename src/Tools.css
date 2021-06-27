@@ -1,13 +1,14 @@
-.outerBox{
-  background: url("./images/tools.jpeg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: white;
+.outerBoxday{
+  color: black;
+  background-color: white;
   height: 100vh;
 }
 
+.outerBoxnight{
+  color: white;
+  background-color: black;
+  height: 100vh;
+}
 
 .menuOpen {
   display:none;

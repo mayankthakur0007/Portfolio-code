@@ -5,25 +5,36 @@ import Contact from "./Contact";
 import RecentWork from "./RecentWork";
 import Tools from "./Tools";
 import { Switch, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const App = () => {
+  const [pageMode, pageModechanged] = useState("");
+  useEffect(()=>{
+    localStorage.getItem("mode")
+    ? pageModechanged(localStorage.getItem("mode"))
+    : pageModechanged("night");
+  },[])
+  const modeSwitch = (mode) => {
+    pageModechanged(mode);
+  };
+
   return (
     <div>
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home getMode={modeSwitch} />
         </Route>
         <Route exact path="/AboutMe">
-          <AboutMe />
+          <AboutMe mode={pageMode} />
         </Route>
         <Route exact path="/Contact">
-          <Contact />
+          <Contact mode={pageMode} />
         </Route>
         <Route exact path="/RecentWork">
-          <RecentWork />
+          <RecentWork mode={pageMode} />
         </Route>
         <Route exact path="/Tools">
-          <Tools />
+          <Tools mode={pageMode} />
         </Route>
         <Route>
           <Page404 />
