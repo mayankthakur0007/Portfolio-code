@@ -13,18 +13,33 @@
 .desktopMenu{
   margin-right: 5%;
   }
-  
-.menuOpen {
-    display:none;
+
+.menuday {
     color: black;
-  }
+}
   
-  @media (max-width: 414px) {
+.menunight {
+    color: white;
+}
+
+.menuIcon{
+  display: none;
+}
+ 
+
+@media (max-width: 414px) {
      .desktopMenu{
       display: none;
       }
-     .menuOpen {
-      display: block;
+      .menuIcon{
+        display: block;
+      }
+       
+     .menuday {
+      position: fixed;
+      margin: 15px 0 0 15px;
+    }
+    .menunight {
       position: fixed;
       margin: 15px 0 0 15px;
     }

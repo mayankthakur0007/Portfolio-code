@@ -29,9 +29,9 @@ const Intro = () => {
           <span className="first">P</span>
           <span className="rest">ratap </span>
           <span className="first">S</span>
-          <span className="rest">ingh</span>
+          <span className="rest">ingh,</span>
         </h1>
-        <h1>I'm a Front-end developer from India currently working in HCL Technologies LTD.</h1>
+        <h1>a Front-end developer from India currently working in HCL Technologies LTD.</h1>
       </div>
       <Grow in={showQuote}>
         <div>

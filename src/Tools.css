@@ -10,22 +10,38 @@
   height: 100vh;
 }
 
-.menuOpen {
-  display:none;
-  color: black;
-}
-
 .desktopMenu{
   margin-right: 5%;
   }
 
-@media (max-width: 414px) {
-   .desktopMenu{
-    display: none;
-    }
-   .menuOpen {
-    display: block;
-    position: fixed;
-    margin: 15px 0 0 15px;
-  }
+
+  .menuday {
+    color: black;
 }
+  
+.menunight {
+    color: white;
+}
+
+.menuIcon{
+  display: none;
+}
+ 
+
+@media (max-width: 414px) {
+     .desktopMenu{
+      display: none;
+      }
+      .menuIcon{
+        display: block;
+      }
+       
+     .menuday {
+      position: fixed;
+      margin: 15px 0 0 15px;
+    }
+    .menunight {
+      position: fixed;
+      margin: 15px 0 0 15px;
+    }
+  }

@@ -32,9 +32,9 @@ const RecentWork = (props) => {
        <div className="desktopMenu">
          <Menu iconC={colorText} />
        </div>
-       <div className="menuOpen">
-         <MenuRoundedIcon onClick={toggleDrawer(true)} />
-       </div>
+       <div className="menuIcon">
+          <MenuRoundedIcon className={`menu${props.mode}`} onClick={toggleDrawer(true)} />
+        </div>
        <Drawer open={state[true]} onClose={toggleDrawer(false)}>
          <MobileMenu closeDrawer={toggleDrawer(false)} />
        </Drawer>

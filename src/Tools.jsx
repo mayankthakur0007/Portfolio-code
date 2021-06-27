@@ -7,12 +7,13 @@ import { Drawer } from "@material-ui/core";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 
 const Tools = (props) => {
-
   const [colorText, changeColorText] = useState();
   const [show, setIsChecked] = useState(false);
   useEffect(() => {
     setIsChecked(true);
-    props.mode==="night"?changeColorText("white"):changeColorText("black")
+    props.mode === "night"
+      ? changeColorText("white")
+      : changeColorText("black");
   }, [props]);
 
   const [state, setState] = useState({
@@ -27,23 +28,22 @@ const Tools = (props) => {
   };
   return (
     <Grow in={show}>
-    <div className={`outerBox${props.mode}`}>
-      <div className="desktopMenu">
-        <Menu iconC={colorText} />
+      <div className={`outerBox${props.mode}`}>
+        <div className="desktopMenu">
+          <Menu iconC={colorText} />
+        </div>
+        <div className="menuIcon">
+          <MenuRoundedIcon
+            className={`menu${props.mode}`}
+            onClick={toggleDrawer(true)}
+          />
+        </div>
+        <Drawer open={state[true]} onClose={toggleDrawer(false)}>
+          <MobileMenu closeDrawer={toggleDrawer(false)} />
+        </Drawer>
+        toolseythsfhr aergaertgae asrtgawrgWRGH SETHAETHJAEGBADTH WRTW
       </div>
-      <div className="menuOpen">
-        <MenuRoundedIcon onClick={toggleDrawer(true)} />
-      </div>
-      <Drawer open={state[true]} onClose={toggleDrawer(false)}>
-        <MobileMenu closeDrawer={toggleDrawer(false)} />
-      </Drawer>
-      toolseythsfhr
-      aergaertgae
-      asrtgawrgWRGH
-      SETHAETHJAEGBADTH
-      WRTW
-    </div>
-  </Grow>
+    </Grow>
   );
 };
 
