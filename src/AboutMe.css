@@ -16,6 +16,11 @@ img{
   text-align: left;
 }
 
+.contact{
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .downloadResume{
   margin-right: 30px;
 }

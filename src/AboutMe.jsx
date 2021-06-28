@@ -25,7 +25,7 @@ const AboutMe = () => {
             more frontend and backend technolgies as well in order to become a full stack developer. Apart from this I'm also Pega
             CSA and CSSA Certified Developer and have a good knowledge on PRPC. Right now I'm learning Google firebase and
             Kotlin for making apis in node.js and firebase services for android
-            development like authentication and more. 
+            development like authentication and more. Feel free to <a className="contact" href="#contact">Contact Me</a> if you think I can fit in your project
           </div>
           <div className="downloadResume">
             <h3>Download Resume</h3>
