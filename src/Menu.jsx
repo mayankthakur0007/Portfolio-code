@@ -15,14 +15,14 @@ const Menu = (props) => {
       text: "About Me",
     },
     {
-      index: 3,
-      name: "#tools",
-      text: "Tools",
-    },
-    {
       index: 4,
       name: "#recent",
       text: "Recent Work",
+    },
+    {
+      index: 3,
+      name: "#tools",
+      text: "Tools",
     },
     {
       index: 5,

@@ -1,4 +1,5 @@
 import "./DownloadResume.css";
+import Resume from "./Mayank Resume.pdf";
 
 const DownloadResume = () => {
 
@@ -23,7 +24,7 @@ const DownloadResume = () => {
     });
   };
   return (
-    <button type="button" className="icon" onClick={buttonn}>
+    <a type="button" className="icon" href={Resume} download onClick={buttonn}>
       <div className="cloud">
         <div className="puff puff-1"></div>
         <div className="puff puff-2"></div>
@@ -50,7 +51,7 @@ const DownloadResume = () => {
         <div className="drop drop-3"></div>
       </div>
       <div className="progress"></div>
-    </button>
+    </a>
   );
 };
 

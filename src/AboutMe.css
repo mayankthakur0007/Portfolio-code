@@ -10,38 +10,26 @@ img{
   margin-left: 150px;
   margin-top: 100px;
   margin-bottom: 0;
+  font-size:xx-large;
   padding-right:50px;
   font-family: 'Quicksand', sans-serif;
   text-align: left;
 }
 
-.aboutMeContent {
- display: inline-flex;
- align-items: center;
+.downloadResume{
+  margin-right: 30px;
 }
 
-@media (max-width: 414px) {
-      img {
-        height: 100px;
-        margin: 10px auto 5px auto;
-        width: 100px;
-      }
-
-      .myDescription {
-        margin-top: 20px;
-        padding-bottom: 50px;
-        padding-right:0;
-      }
-      .aboutMeContent {
-        display: block;
-        text-align: center;
-       }
-  }
+.aboutMeContent {
+ display: inline-flex;
+ margin: 8% 0 20% 0;
+ align-items: center;
+}
 
   @media (max-width: 1300px) {
      img {
        height: 200px;
-       margin: 10px auto 20px auto;
+       margin: 20px auto 20px auto;
        width: 200px;
      }
      .aboutMeContent {

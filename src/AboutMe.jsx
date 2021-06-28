@@ -2,8 +2,9 @@ import "./AboutMe.css";
 import profile from "./images/myImage.png";
 import Grow from "@material-ui/core/Grow";
 import { useEffect, useState } from "react";
+import DownloadResume from "./DownloadResume";
 
-const AboutMe = (props) => {
+const AboutMe = () => {
   const [show, setIsChecked] = useState(false);
   useEffect(() => {
     setIsChecked(true);
@@ -11,61 +12,24 @@ const AboutMe = (props) => {
 
   return (
     <Grow in={show}>
-      <div className={`aboutMe${props.mode}`}>
+      <div>
         <div className="aboutMeContent">
           <div className="profileImage">
-            <img src={profile} width="500px" height="500px" alt="profile" />
+            <img src={profile} width="400px" height="400px" alt="profile" />
           </div>
           <div className="myDescription">
-            jThere's usually two solutions to embedding images into your web
-            content: This means you can set its height and width which could
-            result in a non-uniform scaling applied to each dimension. 2) Apply
-            background-image  jThere's usually two solutions to embedding images into your web
-            content: This means you can set its height and width which could
-            result in a non-uniform scaling applied to each dimension. 2) Apply
-            background-image via CSS You have more control over how the image is
-            displayed but now you have to consider classes and how you would
-            apply them to your HTML content. With React, we can simplify this by
-            abstracting the implementation details into a reusable component.
-            Ideally we want to use our component as if it was regular HTML
-            markup: jThere's usually two solutions to embedding images into your web
-            content: This means you can set its height and width which could
-            result in a non-uniform scaling applied to each dimension. 2) Apply
-            background-image via CSS You have more control over how the image is
-            displayed but now you have to consider classes and how you would
-            apply them to your HTML content. With React, we can simplify this by
-            abstracting the implementation details into a reusable component.
-            Ideally we want to use our component as if it was regular HTML
-            markup: jThere's usually two solutions to embedding images into your web
-            content: This means you can set its height and width which could
-            result in a non-uniform scaling applied to each dimension. 2) Apply
-            background-image via CSS You have more control over how the image is
-            displayed but now you have to consider classes and how you would
-            apply them to your HTML content. With React, we can simplify this by
-            abstracting the implementation details into a reusable component.
-            Ideally we want to use our component as if it was regular HTML
-            markup: jThere's usually two solutions to embedding images into your web
-            content: This means you can set its height and width which could
-            result in a non-uniform scaling applied to each dimension. 2) Apply
-            background-image via CSS You have more control over how the image is
-            displayed but now you have to consider classes and how you would
-            apply them to your HTML content. With React, we can simplify this by
-            abstracting the implementation details into a reusable component.
-            Ideally we want to use our component as if it was regular HTML
-            markup: jThere's usually two solutions to embedding images into your web
-            content: This means you can set its height and width which could
-            result in a non-uniform scaling applied to each dimension. 2) Apply
-            background-image via CSS You have more control over how the image is
-            displayed but now you have to consider classes and how you would
-            apply them to your HTML content. With React, we can simplify this by
-            abstracting the implementation details into a reusable component.
-            Ideally we want to use our component as if it was regular HTML
-            markup:via CSS You have more control over how the image is
-            displayed but now you have to consider classes and how you would
-            apply them to your HTML content. With React, we can simplify this by
-            abstracting the implementation details into a reusable component.
-            Ideally we want to use our component as if it was regular HTML
-            markup:
+            I'm a front-end developer from Aligarh, India currently working in
+            HCL Technolgies LTD. on React.js, Polymer.Js, HTML, CSS, LIT HTML,
+            Javacript. I love to learn UI releated framework and technologies
+            and to make responsive and user friendly websites. I am planning to learn
+            more frontend and backend technolgies as well in order to become a full stack developer. Apart from this I'm also Pega
+            CSA and CSSA Certified Developer and have a good knowledge on PRPC. Right now I'm learning Google firebase and
+            Kotlin for making apis in node.js and firebase services for android
+            development like authentication and more. 
+          </div>
+          <div className="downloadResume">
+            <h3>Download Resume</h3>
+            <DownloadResume />
           </div>
         </div>
       </div>

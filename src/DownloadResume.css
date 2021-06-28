@@ -2,9 +2,7 @@
 	/* This may be anti-A11Y, but just for this demo suppresses the annoyance */
 	outline: 0;
 }
-body {
-	background-color: #ace;
-}
+
 *, *:before, *:after {
 	box-sizing: border-box;
 	margin: 0;
@@ -13,7 +11,7 @@ body {
 .icon {
 	background-color: transparent;
 	border: 0;
-	color: #557eef;
+	color: #d4f1f9 ;
 	cursor: pointer;
 	display: block;
 	font-size: 20px;
@@ -38,7 +36,7 @@ body {
 	height: 5.8em;
 }
 .puff, .cloud-core {
-	background-color: #fff;
+	background-color: #87CEEB;
 }
 .puff {
 	border-radius: 50%;
