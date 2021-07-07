@@ -11,9 +11,7 @@
 
 .sci {
   position: relative;
-  display:flex;
-  flex-wrap: wrap;
-  
+  display:flex;  
   list-style: none;
 }
 
@@ -22,7 +20,7 @@
 }
 
 .icons{
-margin-right: 5%;
+margin-left: 5%;
 }
 
 .sci li a {
@@ -42,4 +40,11 @@ margin-right: 5%;
   margin: 20px;
   border-radius: 10px;
   text-decoration: none;
+}
+
+@media (max-width:1000px) {
+  .sci {
+flex-wrap: wrap;
+  }
+  
 }
