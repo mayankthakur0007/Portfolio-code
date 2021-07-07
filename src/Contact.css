@@ -12,6 +12,8 @@
 .sci {
   position: relative;
   display:flex;
+  flex-wrap: wrap;
+  
   list-style: none;
 }
 
