@@ -6,7 +6,7 @@ import { GitHub } from "@material-ui/icons";
 import Flight from "./images/flight.png";
 import Helpinghand from "./images/hekpinghand.png";
 import Hungerbox from "./images/hungerbox.png";
-import { Typography, IconButton } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import Onboarding from "./images/onboarding.png";
 import { Card } from "@material-ui/core";
 import { CardActions } from "@material-ui/core";
