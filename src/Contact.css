@@ -1,3 +1,41 @@
 .contactContainer{
-  height: 100vh;
+  height: 100%;
+}
+
+.socialMedia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+}
+
+.sci {
+  position: relative;
+  display:flex;
+  list-style: none;
+}
+
+
+
+.sci .li {
+  list-style: none;
+}
+
+.sci li a {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  box-shadow: 0 25px 35px rgba(0,0,0,1);
+  color: black;
+  margin: 20px;
+  border-radius: 10px;
+  text-decoration: none;
 }

@@ -5,11 +5,11 @@ import Tools from "./Tools";
 import Contact from "./Contact";
 import Intro from "./Intro";
 import { Grow } from "@material-ui/core";
-import "./Animation.css";
 import { useState } from "react";
 import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
 import NightsStayRoundedIcon from "@material-ui/icons/NightsStayRounded";
 import Menu from "./Menu";
+import Fade from "react-reveal/Fade";
 
 function Home() {
 
@@ -42,9 +42,12 @@ function Home() {
     <div className="App">
       <div className="slide">
         <div id="home" className={mode}>
+          <Fade right>
           <div className="nav">
             <Menu iconC={iconC} />
           </div>
+          </Fade>
+          <Fade top>
           <div className="mode">
             {day ? (
               <WbSunnyRoundedIcon onClick={modeChange}></WbSunnyRoundedIcon>
@@ -57,6 +60,7 @@ function Home() {
           <div className="mode" onClick={modeChange}>
             {day ? "Day Mode" : "Night Mode"}
           </div>
+          </Fade>
           <Grow>
             <Intro />
           </Grow>

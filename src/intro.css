@@ -5,6 +5,7 @@
 }
 
 .introContent{
+    margin-top: 10px;
     font-family: 'Caveat', cursive;
 }
 @keyframes name{

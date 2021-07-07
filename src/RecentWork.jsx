@@ -1,44 +1,119 @@
 import "./RecentWork.css";
-import Grow from "@material-ui/core/Grow";
-import { useEffect, useState } from "react";
-
+import Fade from "react-reveal/Fade";
+import screenShare from "./images/screenShare.png";
+import Adready from "./images/adready.png";
+import { GitHub } from "@material-ui/icons";
+import Flight from "./images/flight.png";
+import Helpinghand from "./images/hekpinghand.png";
+import Hungerbox from "./images/hungerbox.png";
+import { Typography, IconButton } from "@material-ui/core";
+import Onboarding from "./images/onboarding.png";
+import { Card } from "@material-ui/core";
+import { CardActions } from "@material-ui/core";
 const RecentWork = () => {
-  const [show, setIsChecked] = useState(false);
-  useEffect(() => {
-    setIsChecked(true);
-  }, []);
-
   return (
-     <Grow in={show}>
-     <div className="recentContainer">
-   
-       <h1>Recent</h1>
-          <div >
-            markup:via CSS You have more control over how the image is
-            displayed bumarkup:via CSS You have more control over how the image is
-            displayed but now you have to consider classes and how you would
-            apply them to your HTML content. With React, we can simplify this by
-            abstracting the implementation details into a reusable component.
-            Ideally we want to use our component as if it was regular HTML
-            markup:markup:via CSS You have more control over how the image is
-            displayed but now you have to consider classes and how you would
-            apply them to your HTML content. With React, we can simplify this by
-            abstracting the implementation details into a reusable component.
-            Ideally we want to use our component as if it was regular HTML
-            markup:markup:via CSS You have more control over how the image is
-            displayed but now you have to consider classes and how you would
-            apply them to your HTML content. With React, we can simplify this by
-            abstracting the implementation details into a reusable component.
-            Ideally we want to use our component as if it was regular HTML
-            markup:t now you have to consider classes and how you would
-            apply them to your HTML content. With React, we can simplify this by
-            abstracting the implementation details into a reusable component.
-            Ideally we want to use our component as if it was regular HTML
-            markup:
-          </div>
-
-     </div>
-   </Grow>
+    <div className="recentContainer">
+      <Fade bottom>
+        <div className="heading">
+          <h1>Recent Work</h1>
+        </div>
+      </Fade>
+      <div className="workBoxes">
+        <div className="card">
+          <Fade left>
+            <Card>
+              <img
+                src={screenShare}
+                alt="screenshare"
+                height="300"
+                width="500"
+              />
+              <CardActions className="cardAction" disableSpacing>
+                <div className="AppsName"><Typography>Screenshare</Typography></div>
+                <div className="github" >
+                <a href="https://github.com/mayankthakur0007/screenshare"><GitHub /></a>
+                </div>
+              </CardActions>
+            </Card>
+          </Fade>
+        </div>
+        <div className="card">
+          <Fade left>
+            <Card>
+              <img src={Adready} alt="screenshare" height="300" width="500" />
+            <CardActions className="cardAction" disableSpacing>
+                <div className="AppsName"><Typography>Adready</Typography></div>
+                <div className="github" >
+                <a href="https://github.com/mayankthakur0007/AdReaddy"><GitHub /></a>
+                </div>
+              </CardActions>
+            </Card>
+          </Fade>
+        </div>
+        <div className="card">
+          <Fade left>
+            <Card>
+              <img src={Flight} alt="screenshare" height="300" width="500" />
+            <CardActions className="cardAction" disableSpacing>
+                <div className="AppsName"><Typography>Flight Booking</Typography></div>
+                <div className="github" >
+                <a href="https://github.com/mayankthakur0007/flightBooking"><GitHub /></a>
+                </div>
+              </CardActions>
+            </Card>
+          </Fade>
+        </div>
+        <div className="card">
+          <Fade right>
+            <Card>
+              <img
+                src={Helpinghand}
+                alt="screenshare"
+                height="300"
+                width="500"
+              />
+            <CardActions className="cardAction" disableSpacing>
+                <div className="AppsName"><Typography>Helpinghand</Typography></div>
+                <div className="github" >
+                <a href="https://github.com/mayankthakur0007/DonateForCause"><GitHub /></a>
+                </div>
+              </CardActions>
+            </Card>
+          </Fade>
+        </div>
+        <div className="card">
+          <Fade right>
+            <Card>
+              <img src={Hungerbox} alt="screenshare" height="300" width="500" />
+            <CardActions className="cardAction" disableSpacing>
+                <div className="AppsName"><Typography>Hungerbox</Typography></div>
+                <div className="github" >
+                <a href="https://github.com/mayankthakur0007/HungerBox"><GitHub /></a>
+                </div>
+              </CardActions>
+            </Card>
+          </Fade>
+        </div>
+        <div className="card">
+          <Fade right>
+            <Card>
+              <img
+                src={Onboarding}
+                alt="screenshare"
+                height="300"
+                width="500"
+              />
+            <CardActions className="cardAction" disableSpacing>
+            <div className="AppsName"><Typography>Onboarding App</Typography></div>
+            <div className="github" >
+                <a href="https://github.com/mayankthakur0007/Onboarding"><GitHub /></a>
+                </div>
+              </CardActions>
+            </Card>
+          </Fade>
+        </div>
+      </div>
+    </div>
   );
 };
 

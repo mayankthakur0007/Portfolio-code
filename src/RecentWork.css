@@ -1,5 +1,54 @@
 .recentContainer{
-  height: 100vh;
+  height: auto;
+  padding-bottom: 10px;
 }
 
- 
+ .heading {
+   margin: 2%;
+ }
+
+ .workBoxes {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-evenly;
+ }
+
+ .github a{
+   color: black;
+ }
+
+ .cardAction{
+justify-content: space-between;
+ }
+
+.card  {
+  margin: 20px;
+  width: max-content;
+}
+
+.card:hover .cardAction {
+  cursor: pointer;
+  transition: 0.3s all ease-in;
+  background-color: grey;
+  color: white;
+}
+
+ .card img {
+   margin:5px;
+   transition: 0.5s all ease;
+ }
+
+ .AppsName {
+   margin: 0 15px 0 5px;
+ }
+
+.action{
+  margin:10px 0 10px 0;
+}
+
+
+@keyframes actionAnimation {
+  from {background-color: white;color: black;}
+  to {}
+}

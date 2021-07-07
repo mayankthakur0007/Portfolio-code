@@ -1,22 +1,19 @@
 import "./AboutMe.css";
 import profile from "./images/myImage.png";
-import Grow from "@material-ui/core/Grow";
-import { useEffect, useState } from "react";
 import DownloadResume from "./DownloadResume";
+import Fade from 'react-reveal/Fade.js';
 
 const AboutMe = () => {
-  const [show, setIsChecked] = useState(false);
-  useEffect(() => {
-    setIsChecked(true);
-  }, []);
 
   return (
-    <Grow in={show}>
-      <div>
+      
         <div className="aboutMeContent">
+          <Fade left>
           <div className="profileImage">
             <img src={profile} width="400px" height="400px" alt="profile" />
           </div>
+          </Fade>
+          <Fade right>
           <div className="myDescription">
             I'm a front-end developer from Aligarh, India currently working in
             HCL Technolgies LTD. on React.js, Polymer.Js, HTML, CSS, LIT HTML,
@@ -31,9 +28,9 @@ const AboutMe = () => {
             <h3>Download Resume</h3>
             <DownloadResume />
           </div>
+          </Fade>
         </div>
-      </div>
-    </Grow>
+    
   );
 };
 

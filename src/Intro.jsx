@@ -1,12 +1,11 @@
 import "./intro.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Grow } from "@material-ui/core";
+import Fade from "react-reveal/Fade";
 
 const Intro = () => {
-
-  const [quote, changeQuote] = useState("");
-  const [author, changeAuthor] = useState("");
+  const [quote, changeQuote] = useState();
+  const [author, changeAuthor] = useState();
   const [showQuote, changeshowQuote] = useState(false);
 
   const options = "https://api.quotable.io/random?maxLength=60";
@@ -22,27 +21,38 @@ const Intro = () => {
   return (
     <div className="introContent">
       <div className="nameContainer">
-        <h1>Hi, I'm</h1>
-        <h1 className="name">
-          <span className="first">M</span>
-          <span className="rest">ayank </span>
-          <span className="first">P</span>
-          <span className="rest">ratap </span>
-          <span className="first">S</span>
-          <span className="rest">ingh,</span>
-        </h1>
-        <h1>a Front-end developer from India currently working in HCL Technologies LTD.</h1>
+        <Fade top>
+          <h1>Hi, I'm</h1>
+          <h1 className="name">
+            <span className="first">M</span>
+            <span className="rest">ayank </span>
+            <span className="first">P</span>
+            <span className="rest">ratap </span>
+            <span className="first">S</span>
+            <span className="rest">ingh,</span>
+          </h1>
+        </Fade>
+        <Fade bottom>
+          <h1>
+            a Front-end developer from India currently working in HCL
+            Technologies LTD.
+          </h1>
+        </Fade>
       </div>
-      <Grow in={showQuote}>
-        <div>
+      {showQuote ? (
+        <Fade left>
           <div className="blockquoteWrapper">
             <div className="blockquote">
               <h1>{quote}</h1>
             </div>
-            <div className="author"><h4>-{author}</h4></div>
+            <div className="author">
+              <h4>-{author}</h4>
+            </div>
           </div>
-        </div>
-      </Grow>
+        </Fade>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

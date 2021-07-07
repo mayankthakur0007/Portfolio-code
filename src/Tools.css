@@ -1,5 +1,35 @@
 .outerBox{
-  height: 100vh;
+  height: 100%;
 }
 
+.toolsContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 
+.toolsHeading{
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.myTools{
+  border: 1px solid;
+  margin:5% 10% 20% 10%;
+  border-radius: 20px;
+}
+
+.myTools ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.myTools ul li {
+  list-style: none;
+  margin:40px;
+  font-weight: bolder;
+  font-size: xx-large;
+  flex: 0 0 33.333333%;
+}

@@ -1,4 +1,3 @@
-import "./Animation.css";
 import "./Menu.css";
 
 const Menu = (props) => {
