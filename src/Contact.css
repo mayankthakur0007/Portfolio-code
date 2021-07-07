@@ -21,6 +21,10 @@
   list-style: none;
 }
 
+.icons{
+margin-right: 5%;
+}
+
 .sci li a {
   position: relative;
   display: inline-block;
